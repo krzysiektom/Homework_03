@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servlet_01</title>
+</head>
+<body>
+<form action="/Servlet_01" method="post">
+    <label>
+        Podaj kwotę:
+        <input type="number" min="0.00" max="10000.00" step="0.01" name="amount">
+    </label>
+    <fieldset>
+        <legend>
+            Wybierz walutę na jaką przeliczyć:
+        </legend>
+        <label>
+            <input type="radio" name="convert" value="EURUSD" checked> EUR → USD
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="convert" value="USDEUR"> USD → EUR
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="convert" value="EURPLN"> EUR → PLN
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="convert" value="PLNEUR"> PLN → EUR
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="convert" value="USDPLN"> USD → PLN
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="convert" value="PLNUSD"> PLN → USD
+        </label>
+    </fieldset>
+    <label>
+        <input type="submit" value="Przelicz">
+    </label>
+</form>
+
+</body>
+</html>
